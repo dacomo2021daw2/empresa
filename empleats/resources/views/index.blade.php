@@ -25,7 +25,7 @@
             <td>{{$empl->nom}}</td>
             <td>{{$empl->email}}</td>
             <td>{{$empl->telefon}}</td>
-            <td class="text-center">
+            <td class="text-left">
                 <a href="{{ route('empleats.edit', $empl->id)}}" class="btn btn-success btn-sm">Edita</a>
                 <form action="{{ route('empleats.destroy', $empl->id)}}" method="post" style="display: inline-block">
                     @csrf
