@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Model\Empleat;
+use App\Models\Empleat;
 
 class ControladorEmpleat extends Controller
 {
