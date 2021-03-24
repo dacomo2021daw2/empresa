@@ -80,9 +80,9 @@ class ControladorEmpleat extends Controller
     public function update(Request $request, $id)
     {
         $dades = $request->validate([
-            'name' => 'required|max:255',
+            'nom' => 'required|max:255',
             'email' => 'required|max:255',
-            'phone' => 'required|numeric',
+            'telefon' => 'required|max:255',
         ]);
 
         Empleat::whereId($id)->update($dades);
