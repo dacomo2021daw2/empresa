@@ -2,6 +2,7 @@
 
 @section('content')
 
+<h1>Llista d'empleats</h1>
 <div class="mt-5">
   @if(session()->get('success'))
     <div class="alert alert-success">
@@ -38,4 +39,5 @@
     </tbody>
   </table>
 <div>
+<br><a href="{{ url('empleats/create') }}">Accés directe a la vista de creació d'empleats</a>
 @endsection

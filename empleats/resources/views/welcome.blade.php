@@ -2,6 +2,7 @@
 
 @section('content')
 
+<h1>Aplicació d'administració d'empleats</h1>
 <div class="card mt-5">
   <div class="card-header">
     Afegeix un nou empleat
@@ -35,4 +36,5 @@
       </form>
   </div>
 </div>
+<br><a href="{{ url('empleats') }}">Accés directe a la Llista d'empleats</a>
 @endsection
