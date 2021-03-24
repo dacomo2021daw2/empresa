@@ -4,7 +4,7 @@
 
 <div class="card mt-5">
   <div class="card-header">
-    Create User
+    Afegeix un nou empleat
   </div>
 
   <div class="card-body">
