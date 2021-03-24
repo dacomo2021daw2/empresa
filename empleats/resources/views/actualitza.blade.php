@@ -22,20 +22,21 @@
             <div class="form-group">
                 @csrf
                 @method('PATCH')
-                <label for="name">Nom</label>
+                <label for="nom">Nom</label>
                 <input type="text" class="form-control" name="nom" value="{{ $empleat->nom }}" />
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" class="form-control" name="email" value="{{ $empleat->email }}" />
+                <input type="text" class="form-control" name="email" value="{{ $empleat->email }}" />
             </div>
             <div class="form-group">
-                <label for="phone">Telèfon</label>
-                <input type="tel" class="form-control" name="telefon" value="{{ $empleat->telefon }}" />
+                <label for="telefon">Telèfon</label>
+                <input type="text" class="form-control" name="telefon" value="{{ $empleat->telefon }}" />
             </div>
 
             <button type="submit" class="btn btn-block btn-danger">Actualitza</button>
         </form>
     </div>
 </div>
+<br><a href="{{ url('empleats') }}">Accés directe a la Llista d'empleats</a
 @endsection
