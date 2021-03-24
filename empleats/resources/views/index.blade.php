@@ -22,9 +22,9 @@
         @foreach($empleat as $empl)
         <tr>
             <td>{{$empl->id}}</td>
-            <td>{{$empl->name}}</td>
+            <td>{{$empl->nom}}</td>
             <td>{{$empl->email}}</td>
-            <td>{{$empl->phone}}</td>
+            <td>{{$empl->telefon}}</td>
             <td class="text-center">
                 <a href="{{ route('empleats.edit', $empl->id)}}" class="btn btn-success btn-sm">Edita</a>
                 <form action="{{ route('empleats.destroy', $empl->id)}}" method="post" style="display: inline-block">
